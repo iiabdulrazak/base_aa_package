@@ -1,11 +1,11 @@
 {
-  "name": "FileDetails",
+  "name": "GetImageText",
   "label": "[[label]]",
   "description": "[[description]]",
   "group": "",
   "artifactName": "",
   "packageVersion": "",
   "codeVersion": "",
-  "author": "Micah Smith",
+  "author": "Abdulrazak Osman",
   "commands": []
 }

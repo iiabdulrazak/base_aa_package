@@ -33,18 +33,18 @@ public final class GetFileDetailsCommand implements BotCommand {
     logger.traceEntry(() -> parameters != null ? parameters.entrySet().stream().filter(en -> !Arrays.asList( new String[] {}).contains(en.getKey()) && en.getValue() != null).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)).toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
     GetFileDetails command = new GetFileDetails();
     HashMap<String, Object> convertedParameters = new HashMap<String, Object>();
-    if(parameters.containsKey("filePath") && parameters.get("filePath") != null && parameters.get("filePath").get() != null) {
-      convertedParameters.put("filePath", parameters.get("filePath").get());
-      if(convertedParameters.get("filePath") !=null && !(convertedParameters.get("filePath") instanceof String)) {
-        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","filePath", "String", parameters.get("filePath").get().getClass().getSimpleName()));
+    if(parameters.containsKey("imgUrl") && parameters.get("imgUrl") != null && parameters.get("imgUrl").get() != null) {
+      convertedParameters.put("imgUrl", parameters.get("imgUrl").get());
+      if(convertedParameters.get("imgUrl") !=null && !(convertedParameters.get("imgUrl") instanceof String)) {
+        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","imgUrl", "String", parameters.get("imgUrl").get().getClass().getSimpleName()));
       }
     }
-    if(convertedParameters.get("filePath") == null) {
-      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","filePath"));
+    if(convertedParameters.get("imgUrl") == null) {
+      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","imgUrl"));
     }
 
     try {
-      Optional<Value> result =  Optional.ofNullable(command.action((String)convertedParameters.get("filePath")));
+      Optional<Value> result =  Optional.ofNullable(command.action((String)convertedParameters.get("imgUrl")));
       return logger.traceExit(result);
     }
     catch (ClassCastException e) {

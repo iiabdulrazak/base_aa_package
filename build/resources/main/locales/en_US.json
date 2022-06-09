@@ -1,13 +1,13 @@
 {
-	"label": "File Details",
-	"description": "Returns basic file details",
-	"GetFileDetails.label": "File Size",
-	"GetFileDetails.description": "Returns the size of selected file in bytes",
-	"GetFileDetails.node_label": "File Size in Bytes",
-	"GetFileDetails.return_label": "File Size",
-	"GetFileDetails.return_label_description": "Returned in bytes",
-	"GetFileDetails.filePath.label": "Select a File for Anaylsis",
-	"group": "Micah Smith",
-	"vendor": "Micah_Smith"
+	"label": "Get Image Text",
+	"description": "Returns basic image text",
+	"GetImageText.label": "Image Text",
+	"GetImageText.description": "Returns the image text",
+	"GetImageText.node_label": "Get Image Text",
+	"GetImageText.return_label": "Get Image Text",
+	"GetImageText.return_label_description": "Returned in text",
+	"GetImageText.textOutput.label": "Enter Image URL",
+	"group": "Abdulrazak Osman",
+	"vendor": "Abdulrazak_Osman"
 
 }

@@ -7,7 +7,7 @@
         <processorPath useClasspath="false">
           <entry name="$PROJECT_DIR$/libs/command-processor-1.0.0-SNAPSHOT.jar" />
         </processorPath>
-        <module name="A360FileDetails.main" />
+        <module name="GetImageText.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
